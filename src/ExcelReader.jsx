@@ -5,6 +5,7 @@ import { SheetJSFT } from './utils/types';
 import DataContext  from './data';
 import DragList from './DragList';
 import DropList from './DropList';
+import Charts from './Charts';
 
 class ExcelReader extends Component {
     constructor(props) {
@@ -77,7 +78,11 @@ class ExcelReader extends Component {
                     <DropList />
                 </div>
             </div>
+            <div className="row" style={{ height: "100"}}>
+               <Charts/>
+            </div>
           </DataContext.Provider>
+
         </div>
         )
     }
